@@ -1,0 +1,9 @@
+[user]
+	name = Chuck Yang
+	email = yangchuck@gmail.com
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
+[push]
+	default = matching
