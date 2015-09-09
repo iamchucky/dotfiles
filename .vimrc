@@ -113,9 +113,11 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'godlygeek/tabular'
+
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'hdima/python-syntax'
-Plugin 'godlygeek/tabular'
+Plugin 'digitaltoad/vim-jade'
 
 call vundle#end()
 filetype plugin indent on
@@ -123,3 +125,4 @@ filetype plugin indent on
 let g:netrw_liststyle=3
 set enc=utf-8
 set fileencoding=utf-8
+au BufNewFile,BufReadPost *.jade set filetype=jade
