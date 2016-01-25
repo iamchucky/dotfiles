@@ -62,6 +62,9 @@ nnoremap k gk
 nnoremap <Space> 10jzz
 nnoremap <BS> 10kzz
 
+" Disable auto indent locally
+nnoremap <F8> :setl noai nocin nosi inde=<CR>
+
 " Clear search highlights with ,/
 nmap <silent> ,/ :nohlsearch<CR>
 
