@@ -83,6 +83,18 @@ let g:EasyMotion_leader_key = ','
 " Easy open terminal
 cmap bh ConqueTerm bash
 
+let g:netrw_liststyle=3
+set enc=utf-8
+set fileencoding=utf-8
+au BufNewFile,BufRead *.jade setfiletype jade
+au BufNewFile,BufRead *.ts   setfiletype typescript
+
+let emmet_html5 = 0
+
+"let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsSnippetDirectories=[$HOME.'/dotfiles/UltiSnips']
+
+
 " ========================================
 "         Colors
 " ========================================
@@ -106,6 +118,7 @@ let g:neocomplcache_enable_at_startup = 1
 
 let g:airline_theme = 'powerlineish'
 
+
 set rtp+=~/.vim/bundle/Vundle.vim
 "set rtp+=~/vimfiles/bundle/Vundle.vim/
 "let path='~/vimfiles/bundle'
@@ -119,13 +132,14 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'godlygeek/tabular'
 
 Plugin 'jelera/vim-javascript-syntax'
+Plugin 'leafgarland/typescript-vim'
 Plugin 'hdima/python-syntax'
 Plugin 'digitaltoad/vim-jade'
+Plugin 'mattn/emmet-vim'
+
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
 call vundle#end()
 filetype plugin indent on
 
-let g:netrw_liststyle=3
-set enc=utf-8
-set fileencoding=utf-8
-au BufNewFile,BufReadPost *.jade set filetype=jade

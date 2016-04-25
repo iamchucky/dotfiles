@@ -1,0 +1,223 @@
+###########
+# GENERAL #
+###########
+
+snippet did
+document.getElementById('$1')
+endsnippet
+
+snippet ife
+if ($1) {
+    $2
+} else {
+    $3
+}
+endsnippet
+
+snippet clvi
+var util = require('util')
+console.log('$1: ', util.inspect(${1}, false, null))
+endsnippet
+
+snippet clv
+console.log('$1: ', ${1})
+endsnippet
+
+snippet cl
+console.log('${1}')
+endsnippet
+
+snippet cev
+console.error('$1: ', ${1:err})
+endsnippet
+
+snippet ce
+console.error('${1}')
+endsnippet
+
+
+############
+# PROMISES #
+############
+
+snippet then "then" i
+then(function($1) {
+  $2
+})
+endsnippet
+
+snippet then( "then" i
+then(function($1) {
+  $2
+})
+endsnippet
+
+snippet then(f "then" i
+then(function($1) {
+  $2
+})
+endsnippet
+
+snippet }).t "then" i
+}).then(function($1) {
+  $2
+})
+endsnippet
+
+snippet })t "then" i
+}).then(function($1) {
+  $2
+})
+endsnippet
+
+snippet catch "catch" i
+catch(function(err) {
+  $1
+})
+endsnippet
+
+snippet catch( "catch" i
+catch(function(err) {
+  $1
+})
+endsnippet
+
+snippet }).c "catch" i
+}).catch(function(err) {
+  $1
+})
+endsnippet
+
+snippet })c "then" i
+}).catch(function(err) {
+  $1
+})
+endsnippet
+
+
+##########
+# LODASH #
+##########
+
+snippet _
+_.$1($2, function() {
+})
+endsnippet
+
+snippet _map
+_.map($1s, function(${1}) {
+  return ${2}
+})
+endsnippet
+
+
+
+###########
+# TESTING #
+###########
+
+snippet xit
+xit('${1:description}', () => {
+  $2
+})
+endsnippet
+
+snippet xdes
+xdescribe('${1:description}', () => {
+  $2
+})
+endsnippet
+
+snippet "des(c?)" "describe (test)" r
+describe('${1:description}', () => {
+  $2
+})
+endsnippet
+
+snippet it
+it('${1:description}', () => {
+  $2
+})
+endsnippet
+
+snippet bef
+beforeEach(() => {
+  $2
+})
+endsnippet
+
+#########
+# REACT #
+#########
+
+snippet rpta
+$1: React.PropTypes.array
+endsnippet
+
+snippet rptb
+$1: React.PropTypes.bool
+endsnippet
+
+snippet rptf
+$1: React.PropTypes.func
+endsnippet
+
+snippet rptn
+$1: React.PropTypes.number
+endsnippet
+
+snippet rpto
+$1: React.PropTypes.object
+endsnippet
+
+snippet rpts
+$1: React.PropTypes.string
+endsnippet
+
+snippet imr
+import React from 'react';
+
+endsnippet
+
+snippet imrd
+import ReactDOM from 'react-dom';
+
+endsnippet
+
+snippet 6rec
+class $1 extends React.Component {
+  render() {
+    return $2;
+  }
+}
+endsnippet
+
+snippet rdr
+ReactDOM.render(<$1 />, $2);
+endsnippet
+
+snippet ss
+this.setState({$1});
+endsnippet
+
+###########
+# IMPORTS #
+###########
+
+snippet imlo
+import _ from 'lodash';
+
+endsnippet
+
+snippet im
+import $1 from '$2';
+
+endsnippet
+
+###########
+# EXPORTS #
+###########
+
+snippet exd
+export default $1;
+endsnippet
