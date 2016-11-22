@@ -131,6 +131,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'godlygeek/tabular'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'leafgarland/typescript-vim'
